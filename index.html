@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>ريم هيرستايل | كوافيرة تجي للبيت في الرياض (نموذج تجريبي)</title>
+<meta name="description" content="نموذج تصميم تجريبي لموقع كوافيرة منزلية في الرياض.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;600;700&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#15100f;--bg2:#1d1513;--fg:#f7ece6;--mut:#c4aca2;--pri:#c98b73;--pri2:#8e5543;--acc:#f0c9b8;--onpri:#1a0f0b;--card:#211916;--line:rgba(240,201,184,.16);--hbg:#2a1a15;--shade:linear-gradient(200deg,rgba(21,16,15,.3),rgba(21,16,15,.9));--fbg:#0e0a09;--ftx:#f0dcd2; --fd:"Reem Kufi","Cairo",sans-serif;--fb:"Cairo","Segoe UI",Tahoma,sans-serif;--r:22px;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--fb);background:var(--bg);color:var(--fg);line-height:1.8;overflow-x:hidden;padding-bottom:84px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.demo{background:#000;color:#fff;text-align:center;font-size:12.5px;padding:7px 12px;letter-spacing:.2px}
+.demo b{color:var(--acc)}
+header{position:sticky;top:0;z-index:40;transition:.35s;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid var(--line)}
+header.sh{box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;transition:height .3s}
+header.sh .nav{height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--fd);font-size:22px;font-weight:700;color:var(--fg)}
+.mono{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--pri),var(--acc));color:var(--onpri);font-family:var(--fd);font-size:22px;box-shadow:0 6px 18px color-mix(in srgb,var(--pri) 45%,transparent)}
+nav.links{display:none;gap:26px;font-size:15px}
+nav.links a{position:relative;color:var(--mut);transition:color .3s}
+nav.links a:after{content:"";position:absolute;inset-inline:0;bottom:-5px;height:2px;background:var(--acc);transform:scaleX(0);transition:transform .35s var(--ease)}
+nav.links a:hover{color:var(--fg)}nav.links a:hover:after{transform:scaleX(1)}
+.btn{position:relative;display:inline-flex;align-items:center;gap:9px;overflow:hidden;border:0;cursor:pointer;font:inherit;font-weight:700;padding:13px 26px;border-radius:999px;color:var(--onpri);background:linear-gradient(135deg,var(--pri),var(--pri2));box-shadow:0 12px 30px color-mix(in srgb,var(--pri) 40%,transparent);transition:transform .25s var(--ease),box-shadow .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px color-mix(in srgb,var(--pri) 55%,transparent)}
+.btn:after{content:"";position:absolute;top:0;bottom:0;width:55%;left:-90%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:left .8s}
+.btn:hover:after{left:140%}
+.btn.sm{padding:9px 18px;font-size:14px}
+.btn.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--acc);box-shadow:none}
+.btn.ghost:hover{background:color-mix(in srgb,var(--acc) 14%,transparent)}
+.btn.wa{background:linear-gradient(135deg,#25d366,#128c4a);color:#fff;box-shadow:0 12px 30px rgba(37,211,102,.35)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+.hero{position:relative;min-height:calc(100svh - 100px);display:flex;align-items:center;overflow:hidden;isolation:isolate;background:var(--hbg)}
+.hero .bg{position:absolute;inset:-4%;z-index:-3;width:108%;height:108%;object-fit:cover;animation:kb 22s ease-in-out infinite alternate;will-change:transform}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:var(--shade)}
+.blob{position:absolute;z-index:-1;border-radius:50%;filter:blur(60px);opacity:.5;animation:drift 14s ease-in-out infinite alternate;pointer-events:none}
+.b1{width:340px;height:340px;background:var(--pri);top:-80px;inset-inline-start:-90px}
+.b2{width:280px;height:280px;background:var(--acc);bottom:-60px;inset-inline-end:-60px;animation-delay:-6s}
+.spark{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.spark i{position:absolute;bottom:-20px;width:6px;height:6px;border-radius:50%;background:var(--acc);opacity:0;animation:rise linear infinite}
+.hero-in{padding:56px 0 90px;max-width:640px;color:#fff}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;font-weight:700;color:var(--acc);font-size:14px;letter-spacing:.5px;margin-bottom:14px;opacity:0;animation:up .9s .1s var(--ease) forwards}
+.eyebrow:before{content:"";width:34px;height:2px;background:var(--acc)}
+h1{font-family:var(--fd);font-size:clamp(40px,10.5vw,76px);line-height:1.2;font-weight:700;margin-bottom:16px}
+h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.12em}
+h1 .w>span{display:inline-block;transform:translateY(115%);animation:word 1s var(--ease) forwards;animation-delay:calc(.25s + var(--i,0)*.12s)}
+.sub{font-size:clamp(16px,4.2vw,19px);color:rgba(255,255,255,.86);max-width:520px;margin-bottom:26px;opacity:0;animation:up .9s .8s var(--ease) forwards}
+.cta{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:up .9s 1s var(--ease) forwards}
+.hero .btn.ghost{color:#fff;border-color:rgba(255,255,255,.7)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px;opacity:0;animation:up .9s 1.2s var(--ease) forwards}
+.chips span{font-size:13px;padding:5px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);backdrop-filter:blur(6px)}
+.scroll{position:absolute;bottom:18px;left:50%;width:24px;height:40px;border:2px solid rgba(255,255,255,.6);border-radius:14px;transform:translateX(-50%)}
+.scroll:after{content:"";position:absolute;top:7px;left:50%;width:4px;height:8px;margin-left:-2px;border-radius:3px;background:#fff;animation:wheel 1.8s infinite}
+.marq{background:var(--pri);color:var(--onpri);overflow:hidden;white-space:nowrap;padding:14px 0;transform:rotate(-1.2deg);margin:-26px -10px 0;position:relative;z-index:3;box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.marq .tr{display:inline-flex;gap:26px;animation:mq 28s linear infinite;font-family:var(--fd);font-size:21px}
+.marq i{font-style:normal;color:var(--acc)}
+section{padding:84px 0}
+.kicker{color:var(--pri);font-weight:800;letter-spacing:.5px;font-size:14px;display:flex;align-items:center;gap:10px}
+.kicker:before{content:"";width:30px;height:2px;background:var(--pri)}
+h2{font-family:var(--fd);font-size:clamp(30px,7vw,46px);line-height:1.3;margin:6px 0 10px}
+.lead{color:var(--mut);max-width:560px;margin-bottom:34px}
+.cards{display:grid;gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s;transform-style:preserve-3d;will-change:transform}
+.card:hover{box-shadow:0 24px 50px rgba(0,0,0,.22)}
+.card .ph{position:relative;overflow:hidden;aspect-ratio:4/3}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.card:hover .ph img{transform:scale(1.09)}
+.card .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.35))}
+.num{position:absolute;z-index:2;top:12px;inset-inline-start:12px;font-family:var(--fd);background:var(--bg);color:var(--pri);border-radius:999px;padding:1px 13px;font-size:15px;font-weight:700}
+.card .bd{padding:20px 22px 24px}
+.card h3{font-family:var(--fd);font-size:24px;margin-bottom:4px;transition:color .3s}
+.card:hover h3{color:var(--pri)}
+.card p{color:var(--mut);font-size:15.5px}
+.band{background:var(--bg2)}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-items:start}
+.gal figure{overflow:hidden;border-radius:18px;aspect-ratio:3/4;position:relative}
+.gal figure:nth-child(2){margin-top:34px}
+.gal img{width:100%;height:116%;object-fit:cover;will-change:transform;transition:filter .5s}
+.gal figure:hover img{filter:saturate(1.2) brightness(1.05)}
+.steps{list-style:none;display:grid;gap:18px;position:relative}
+.steps li{display:flex;gap:18px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;transition:transform .3s var(--ease),border-color .3s}
+.steps li:hover{transform:translateY(-5px);border-color:var(--acc)}
+.steps b{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-family:var(--fd);font-size:24px;border:2px solid var(--acc);color:var(--pri);transition:.3s}
+.steps li:hover b{background:var(--acc);color:var(--onpri)}
+.steps h4{font-family:var(--fd);font-size:21px}
+.steps p{color:var(--mut);font-size:15.5px}
+.whys{display:grid;gap:16px}
+.why{padding:26px;border-radius:var(--r);background:var(--card);border:1px solid var(--line);position:relative;overflow:hidden;transition:transform .35s var(--ease)}
+.why:before{content:"";position:absolute;inset-inline-end:-40px;top:-40px;width:120px;height:120px;border-radius:50%;background:var(--acc);opacity:.18;transition:transform .6s var(--ease)}
+.why:hover{transform:translateY(-6px)}.why:hover:before{transform:scale(2.2)}
+.ic{font-size:30px;display:inline-block;animation:flt 4s ease-in-out infinite}
+.why h4{font-family:var(--fd);font-size:21px;margin:6px 0 2px}
+.why p{color:var(--mut);font-size:15.5px}
+.about{display:grid;gap:30px;align-items:center}
+.about .q{font-family:var(--fd);font-size:clamp(24px,5.4vw,34px);line-height:1.6;color:var(--pri)}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:12px;transition:border-color .3s,transform .3s}
+details:hover{border-color:var(--acc)}
+summary{cursor:pointer;list-style:none;padding:17px 22px;font-weight:700;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:24px;color:var(--pri);transition:transform .35s var(--ease);line-height:1}
+details[open] summary:after{transform:rotate(45deg)}
+.a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s var(--ease)}
+details[open] .a{grid-template-rows:1fr}
+.a p{overflow:hidden;padding:0 22px;color:var(--mut)}
+details[open] .a p{padding-bottom:18px}
+.book{position:relative;overflow:hidden;border-radius:30px;padding:46px 26px;text-align:center;color:#fff;background:linear-gradient(135deg,var(--pri),var(--pri2));isolation:isolate}
+.book:before,.book:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.12);z-index:-1;animation:drift 12s ease-in-out infinite alternate}
+.book:before{width:260px;height:260px;top:-90px;inset-inline-start:-70px}
+.book:after{width:200px;height:200px;bottom:-70px;inset-inline-end:-50px;animation-delay:-5s}
+.book h2{color:#fff}
+.book p{opacity:.9;max-width:480px;margin:0 auto 24px}
+.book .btn{background:#fff;color:var(--pri2);box-shadow:0 14px 34px rgba(0,0,0,.25)}
+.book .btn.wa{background:#25d366;color:#fff}
+.fm{display:grid;gap:12px;max-width:520px;margin:0 auto 20px;text-align:start}
+.fm input,.fm select{font:inherit;padding:13px 16px;border-radius:14px;border:1.5px solid rgba(255,255,255,.4);background:rgba(255,255,255,.14);color:#fff;transition:.3s}
+.fm input::placeholder{color:rgba(255,255,255,.75)}
+.fm input:focus,.fm select:focus{outline:none;border-color:#fff;background:rgba(255,255,255,.22);box-shadow:0 0 0 4px rgba(255,255,255,.18)}
+.fm select option{color:#111}
+footer{padding:44px 0 30px;background:var(--fbg);color:var(--ftx);font-size:14.5px}
+footer .row{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:flex-start}
+footer b{font-family:var(--fd);font-size:22px;color:var(--acc)}
+footer p{opacity:.8}
+footer small{display:block;margin-top:22px;opacity:.65;font-size:12.5px;line-height:1.7}
+.bar{position:fixed;z-index:50;inset-inline:12px;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;gap:10px;align-items:center;justify-content:space-between;padding:10px 12px 10px 16px;border-radius:999px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);box-shadow:0 14px 40px rgba(0,0,0,.28);transform:translateY(140%);transition:transform .5s var(--ease)}
+.bar.on{transform:none}
+.bar span{font-weight:700;font-size:14.5px}
+.bar .btn{animation:pulse 2.6s infinite}
+#prog{position:fixed;top:0;inset-inline:0;height:3px;z-index:60;background:linear-gradient(90deg,var(--pri),var(--acc));transform-origin:right;transform:scaleX(0)}
+.glow{position:fixed;z-index:1;width:380px;height:380px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,color-mix(in srgb,var(--acc) 22%,transparent),transparent 65%);transform:translate(-50%,-50%);left:-400px;top:0;display:none}
+.js .rv{opacity:0;transform:translateY(40px) scale(.98);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.in.card:hover{transform:translateY(-8px)}
+@keyframes kb{to{transform:scale(1.1) translate(-1.5%,1%)}}
+@keyframes drift{to{transform:translate(40px,30px) scale(1.15)}}
+@keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes word{to{transform:none}}
+@keyframes wheel{0%{opacity:0;transform:translateY(0)}30%{opacity:1}100%{opacity:0;transform:translateY(14px)}}
+@keyframes mq{to{transform:translateX(50%)}}
+@keyframes rise{0%{opacity:0;transform:translateY(0) scale(.6)}15%{opacity:.9}100%{opacity:0;transform:translateY(-105vh) scale(1.3)}}
+@keyframes flt{50%{transform:translateY(-6px) rotate(-4deg)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 14px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+@media (min-width:760px){
+ nav.links{display:flex}.cards{grid-template-columns:repeat(3,1fr)}.whys{grid-template-columns:repeat(3,1fr)}.about{grid-template-columns:1.1fr .9fr}
+ .steps{grid-template-columns:repeat(3,1fr)}.steps li{flex-direction:column}.glow{display:block}body{padding-bottom:0}.bar{display:none}
+ .gal{gap:20px}.gal figure:nth-child(2){margin-top:56px}.hero-in{padding:90px 0 120px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv,h1 .w>span,.eyebrow,.sub,.cta,.chips{opacity:1!important;transform:none!important}}
+[hidden]{display:none!important}
+</style>
+<style>
+.hero.L2 .bg{inset:-6%;width:112%;height:112%}
+.hero.L2{min-height:calc(100svh - 100px);align-items:flex-end}
+.hero.L2:after{content:"";position:absolute;inset:12px;border:1px solid color-mix(in srgb,var(--acc) 50%,transparent);pointer-events:none;z-index:2}
+.L2 .hero-in{padding:80px 0 86px;max-width:760px}
+.L2 h1{font-size:clamp(50px,14vw,120px);line-height:1.08;letter-spacing:-1px}
+.L2 h1 .w>span{background:linear-gradient(100deg,#fff 35%,var(--acc) 50%,#fff 65%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:word 1s var(--ease) forwards,shim 7s linear infinite;animation-delay:calc(.25s + var(--i,0)*.12s),0s}
+@keyframes shim{to{background-position:-260% 0}}
+.big{position:absolute;z-index:-1;font-family:var(--fd);font-size:46vw;line-height:.9;color:transparent;-webkit-text-stroke:1px color-mix(in srgb,var(--acc) 45%,transparent);inset-inline-end:-3vw;top:6%;animation:drift 16s ease-in-out infinite alternate;white-space:nowrap}
+.L2 .btn.wa{background:linear-gradient(135deg,var(--acc),var(--pri));color:#1a0f0b;box-shadow:0 14px 34px color-mix(in srgb,var(--acc) 40%,transparent)}
+.marq{background:transparent;color:var(--acc);border-block:1px solid var(--line);transform:none;margin:0;box-shadow:none}
+.kicker{color:var(--acc)}.kicker:before{background:var(--acc)}
+h2{letter-spacing:-.5px}
+.sv2{margin-top:30px;border-top:1px solid var(--line)}
+.s2{display:grid;grid-template-columns:34px 1fr 78px;gap:14px;align-items:center;padding:22px 6px;border-bottom:1px solid var(--line);transition:padding .6s var(--ease),background .4s}
+.s2 .n{font-family:var(--fd);font-size:15px;color:var(--acc)}
+.s2 h3{font-family:var(--fd);font-size:clamp(26px,6.4vw,44px);line-height:1.2;transition:color .3s,transform .6s var(--ease)}
+.s2 p{color:var(--mut);font-size:14px}
+.s2 .t{width:78px;height:78px;border-radius:50%;overflow:hidden;transition:width .7s var(--ease),border-radius .7s var(--ease);justify-self:end}
+.s2 .t img{width:100%;height:100%;object-fit:cover}
+.s2:hover{padding-inline:20px;background:color-mix(in srgb,var(--acc) 7%,transparent)}.s2:hover h3{color:var(--acc);transform:translateX(-12px)}
+@media(min-width:800px){.s2{grid-template-columns:60px 1fr 130px}.s2 .t{width:130px;height:84px;border-radius:42px}.s2:hover .t{width:260px;border-radius:12px}}
+.gl2{overflow:hidden;margin-top:30px}.gl2 .tr{display:flex;gap:14px;width:max-content;animation:film 60s linear infinite}
+.gl2 figure{flex:0 0 210px;aspect-ratio:3/4;border-radius:6px}
+@keyframes film{to{transform:translateX(-50%)}}
+</style>
+<style>html,body{overflow-x:clip;max-width:100%}.hero{overflow:clip}h1 .w{padding-top:.1em;padding-bottom:.28em;margin-bottom:-.16em}</style>
+</head>
+<body>
+<div id="prog"></div><div class="glow" id="glow"></div>
+<div class="demo"><b>نموذج تصميم تجريبي</b> · غير رسمي، أُعدّ كاقتراح ولم يُنشر ولا يمثّل النشاط التجاري</div>
+<header id="hd"><div class="wrap nav">
+<a class="brand" href="#top"><span class="mono">ر</span>ريم هيرستايل</a>
+<nav class="links"><a href="#services">الخدمات</a><a href="#gallery">المعرض</a><a href="#how">كيف نعمل</a><a href="#faq">الأسئلة</a></nav>
+<a class="btn wa sm" href="https://wa.me/966501956583" target="_blank" rel="noopener" data-wa>واتساب</a>
+</div></header>
+<main id="top">
+<section class="hero L2"><img class="bg" data-k="hero" alt="" width="1000" height="900" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><div class="big" aria-hidden="true">ريم</div><div class="spark" id="spark"></div><div class="wrap"><div class="hero-in tx"><div class="eyebrow">مكياج وتسريحات · الرياض</div><h1><span class="w"><span>كوافيرة</span></span> <span class="w"><span>تجي</span></span> <span class="w"><span>لبيتك</span></span> </h1><p class="sub">مكياج وتسريحات في راحة منزلك بالرياض. الحجز عبر واتساب.</p><div class="cta"><a class="btn wa" href="https://wa.me/966501956583" target="_blank" rel="noopener" data-wa><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.8-4.5-4-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.4.3.2.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg> احجزي عبر واتساب</a><a class="btn ghost" href="#services">الخدمات</a></div><div class="chips"><span>تجي للبيت</span><span>مكياج وتسريحات</span><span>الحجز عبر واتساب</span></div></div></div></section>
+<div class="marq"><div class="tr"><span>تسريحات الشعر</span><i>✦</i><span>المكياج</span><i>✦</i><span>تجهيز العروس</span><i>✦</i><span>تسريحات السهرات</span><i>✦</i><span>إكسسوارات الشعر</span><i>✦</i><span>خدمة منزلية</span><i>✦</i><span>تسريحات الشعر</span><i>✦</i><span>المكياج</span><i>✦</i><span>تجهيز العروس</span><i>✦</i><span>تسريحات السهرات</span><i>✦</i><span>إكسسوارات الشعر</span><i>✦</i><span>خدمة منزلية</span><i>✦</i></div></div>
+
+<section id="services"><div class="wrap">
+<div class="kicker rv">خدماتنا</div><h2 class="rv">مكياج وتسريحات بلمسة خاصة</h2><p class="lead rv">اختاري الإطلالة، ونجهّزها لك في بيتك.</p>
+<div class="sv2"><article class="s2 rv"><span class="n">01</span><div><h3 data-svc>تسريحات الشعر</h3><p>تسريحات أنيقة للمناسبات واليوم العادي.</p></div><div class="t"><img data-k="c0" alt="تسريحات الشعر" width="560" height="420" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div></article><article class="s2 rv"><span class="n">02</span><div><h3 data-svc>المكياج</h3><p>مكياج يناسب إطلالتك ومناسبتك.</p></div><div class="t"><img data-k="c1" alt="المكياج" width="560" height="420" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div></article><article class="s2 rv"><span class="n">03</span><div><h3 data-svc>تجهيز العروس</h3><p>تسريحة ومكياج ليومك المميز.</p></div><div class="t"><img data-k="c2" alt="تجهيز العروس" width="560" height="420" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div></article><article class="s2 rv"><span class="n">04</span><div><h3 data-svc>تسريحات السهرات</h3><p>إطلالة متكاملة للحفلات والسهرات.</p></div><div class="t"><img data-k="c3" alt="تسريحات السهرات" width="560" height="420" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div></article><article class="s2 rv"><span class="n">05</span><div><h3 data-svc>إكسسوارات الشعر</h3><p>لمسات تكمّل التسريحة.</p></div><div class="t"><img data-k="c4" alt="إكسسوارات الشعر" width="560" height="420" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div></article><article class="s2 rv"><span class="n">06</span><div><h3 data-svc>خدمة منزلية</h3><p>نصلك إلى بيتك في الرياض.</p></div><div class="t"><img data-k="c5" alt="خدمة منزلية" width="560" height="420" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div></article></div><p class="lead rv" style="margin-top:22px;font-size:14px">الخدمات المعروضة تقديرية في هذا النموذج، وتُحدَّد الأسعار والتفاصيل مع صاحبة النشاط.</p>
+</div></section>
+
+<section class="band" id="gallery"><div class="wrap">
+<div class="kicker rv">لمحات</div><h2 class="rv">أجواء تليق بيومك</h2><p class="lead rv">صور توضيحية لأسلوب العمل، لا تمثّل أعمال النشاط الفعلية.</p>
+<div class="gl gl2"><div class="tr"><figure class="rv "><img data-k="g0" alt="صورة توضيحية" width="420" height="560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></figure><figure class="rv "><img data-k="g1" alt="صورة توضيحية" width="420" height="560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></figure><figure class="rv "><img data-k="g2" alt="صورة توضيحية" width="420" height="560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></figure><figure class="rv "><img data-k="g0" alt="صورة توضيحية" width="420" height="560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></figure><figure class="rv "><img data-k="g1" alt="صورة توضيحية" width="420" height="560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></figure><figure class="rv "><img data-k="g2" alt="صورة توضيحية" width="420" height="560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></figure><figure class="rv "><img data-k="g0" alt="صورة توضيحية" width="420" height="560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></figure><figure class="rv "><img data-k="g1" alt="صورة توضيحية" width="420" height="560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></figure><figure class="rv "><img data-k="g2" alt="صورة توضيحية" width="420" height="560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></figure><figure class="rv "><img data-k="g0" alt="صورة توضيحية" width="420" height="560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></figure><figure class="rv "><img data-k="g1" alt="صورة توضيحية" width="420" height="560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></figure><figure class="rv "><img data-k="g2" alt="صورة توضيحية" width="420" height="560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></figure></div></div>
+</div></section>
+
+<section id="how"><div class="wrap">
+<div class="kicker rv">الحجز</div><h2 class="rv">ثلاث خطوات وتنتهين</h2><p class="lead rv">كل شيء عبر رسالة واتساب واحدة، بدون تسجيل ولا تعقيد.</p>
+<ol class="steps"><li class="rv"><b data-n="1">0</b><div><h4>أرسلي رسالة</h4><p>اكتبي الخدمة والموعد الذي يناسبك عبر واتساب.</p></div></li><li class="rv"><b data-n="2">0</b><div><h4>نؤكد لك الموعد</h4><p>نرد عليك ونرتب التفاصيل معك.</p></div></li><li class="rv"><b data-n="3">0</b><div><h4>استمتعي بيومك</h4><p>نجهّز كل شيء بحسب الاتفاق.</p></div></li></ol>
+</div></section>
+
+<section class="band"><div class="wrap">
+<div class="kicker rv">لماذا نحن</div><h2 class="rv">راحتك أولًا</h2><p class="lead rv"> </p>
+<div class="whys"><div class="why rv"><span class="ic">🏠</span><h4>تجي للبيت</h4><p>بدون مشاوير ولا انتظار.</p></div><div class="why rv"><span class="ic">💄</span><h4>مكياج وتسريحات</h4><p>في موعد واحد وراحة تامة.</p></div><div class="why rv"><span class="ic">💬</span><h4>حجز على الواتس</h4><p>رسالة واحدة تكفي.</p></div></div>
+</div></section>
+
+<section><div class="wrap about">
+<div><div class="kicker rv">عنّا</div><p class="q rv">كوافيرة بالرياض تجي للبيت، مكياج وتسريحات، والحجز على الواتس.</p></div>
+<div class="rv" style="border-radius:26px;overflow:hidden;aspect-ratio:4/5;max-height:440px"><img data-k="g0" alt="" width="420" height="560" style="width:100%;height:100%;object-fit:cover" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+</div></section>
+
+<section class="band" id="faq"><div class="wrap" style="max-width:760px">
+<div class="kicker rv">أسئلة شائعة</div><h2 class="rv">أسئلة وأجوبة</h2><p class="lead rv"> </p>
+<details class="rv"><summary>كيف أحجز موعدًا؟</summary><div class="a"><p>أرسلي رسالة واتساب عبر الزر في الصفحة، واذكري الخدمة والموعد المناسب.</p></div></details><details class="rv"><summary>هل الأسعار مذكورة هنا؟</summary><div class="a"><p>هذا نموذج تصميم تجريبي، والأسعار والتفاصيل تُؤكد مباشرة عند الحجز.</p></div></details><details class="rv"><summary>هل تأتون إلى بيتي؟</summary><div class="a"><p>نعم، الخدمة معلنة كخدمة تأتي إلى البيت في الرياض، ويُؤكد الموقع والتفاصيل عند الحجز.</p></div></details>
+</div></section>
+
+<section id="book"><div class="wrap">
+<div class="book rv">
+<h2>جاهزة للموعد؟</h2>
+<p>اكتبي بياناتك وسيفتح الطلب جاهزًا في واتساب.</p>
+<div class="fm">
+<input id="fn" placeholder="الاسم" autocomplete="name">
+<select id="fs"><option>اختاري الخدمة</option></select>
+<input id="fd" placeholder="التاريخ والوقت المفضل">
+</div>
+<a class="btn wa" id="sendwa" href="https://wa.me/966501956583" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.8-4.5-4-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.4.3.2.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>إرسال عبر واتساب</a>
+</div></div></section>
+</main>
+<footer><div class="wrap"><div class="row">
+<div><b>ريم هيرستايل</b><p>الرياض، المملكة العربية السعودية</p></div>
+<div><p>واتساب: <a href="https://wa.me/966501956583" target="_blank" rel="noopener" data-wa>0501956583</a></p></div>
+</div>
+<small>نموذج تجريبي أُعدّ اعتمادًا على ما نشرته صاحبة النشاط علنًا (الوصف ورقم الحجز).<br>الصور توضيحية من مكتبة Pexels (استخدام حر) ولا تعود للنشاط التجاري. تصميم تجريبي مقترح، غير رسمي ولم يُعتمد من صاحب النشاط.</small></div></footer>
+<div class="bar" id="bar"><span>احجزي موعدك الآن</span><a class="btn wa sm" href="https://wa.me/966501956583" target="_blank" rel="noopener" data-wa>واتساب</a></div>
+<script>
+var WA="https://wa.me/966501956583",PRE="السلام عليكم، أرغب بحجز موعد";
+function waUrl(t){ if(WA.indexOf("/message/")>-1) return WA; return WA+"?text="+encodeURIComponent(t||PRE)}
+document.querySelectorAll("[data-wa]").forEach(function(a){a.href=waUrl(PRE)});
+var SV=[];document.querySelectorAll("[data-svc]").forEach(function(h){SV.push(h.textContent)});
+var sel=document.getElementById("fs");SV.forEach(function(t){var o=document.createElement("option");o.textContent=t;sel.appendChild(o)});
+document.getElementById("sendwa").addEventListener("click",function(e){var n=document.getElementById("fn").value.trim(),s=sel.value,d=document.getElementById("fd").value.trim();
+ var m="السلام عليكم، أرغب بحجز موعد"+(n?"\nالاسم: "+n:"")+(s&&s.indexOf("اختاري")<0?"\nالخدمة: "+s:"")+(d?"\nالموعد المفضل: "+d:"");this.href=waUrl(m)});
+function IMGLOAD(){var I=window.IMG||{};document.querySelectorAll("img[data-k]").forEach(function(e){if(I[e.dataset.k])e.src=I[e.dataset.k]})}
+(function(){try{
+var d=document,de=d.documentElement,rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+d.querySelectorAll("h1 .w>span").forEach(function(s,i){s.style.setProperty("--i",i)});
+var sp=d.getElementById("spark");if(sp)for(var i=0;i<14;i++){var e=d.createElement("i");e.style.left=(Math.random()*100)+"%";e.style.animationDuration=(7+Math.random()*9)+"s";e.style.animationDelay=(Math.random()*10)+"s";e.style.width=e.style.height=(3+Math.random()*5)+"px";sp.appendChild(e)}
+if(rm||!("IntersectionObserver" in window))return;
+de.classList.add("js");
+d.querySelectorAll(".cards .card,.gal figure,.steps li,.whys .why,details").forEach(function(e,i){e.style.setProperty("--d",((i%3)*.12)+"s")});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -6% 0px"});
+d.querySelectorAll(".rv").forEach(function(e){io.observe(e)});
+setTimeout(function(){d.querySelectorAll(".rv:not(.in)").forEach(function(e){if(e.getBoundingClientRect().top<innerHeight)e.classList.add("in")})},2500);
+d.querySelectorAll(".steps b").forEach(function(b){var n=+b.dataset.n,o=new IntersectionObserver(function(es){if(es[0].isIntersecting){o.disconnect();var t0=null;(function f(t){t0=t0||t;var p=Math.min((t-t0)/800,1);b.textContent=Math.max(1,Math.round(n*p));if(p<1)requestAnimationFrame(f)})(performance.now())}},{threshold:.6});o.observe(b)});
+var hd=d.getElementById("hd"),pr=d.getElementById("prog"),bar=d.getElementById("bar"),bg=d.querySelector(".hero .bg"),hero=d.querySelector(".hero"),gi=[].slice.call(d.querySelectorAll(".gl img")),tk=false;
+function upd(){tk=false;var y=pageYOffset,h=de.scrollHeight-innerHeight;pr.style.transform="scaleX("+(h>0?y/h:0)+")";hd.classList.toggle("sh",y>30);bar.classList.toggle("on",y>hero.offsetHeight*.6);
+ if(bg&&y<hero.offsetHeight)bg.style.marginTop=Math.min(y*.18,60)+"px";
+ gi.forEach(function(im){var r=im.parentNode.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){var p=(r.top+r.height/2-innerHeight/2)/innerHeight;im.style.transform="translateY("+(p*-34)+"px)"}})}
+addEventListener("scroll",function(){if(!tk){tk=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// tilt
+if(matchMedia("(hover:hover)").matches){
+ d.querySelectorAll("[data-tilt]").forEach(function(c){c.addEventListener("mousemove",function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transition="box-shadow .3s";c.style.transform="perspective(900px) rotateY("+(x*-9)+"deg) rotateX("+(y*7)+"deg) translateY(-6px)"});c.addEventListener("mouseleave",function(){c.style.transition="transform .5s var(--ease),box-shadow .3s";c.style.transform=""})});
+ var g=d.getElementById("glow");addEventListener("mousemove",function(e){g.style.left=e.clientX+"px";g.style.top=e.clientY+"px"},{passive:true});
+}
+}catch(e){document.documentElement.classList.remove("js")}})();
+</script>
+<script defer src="img1.js"></script><script defer src="img2.js"></script>
+</body>
+</html>
